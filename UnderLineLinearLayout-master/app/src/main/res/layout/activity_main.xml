@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="razerdp.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="增加事件" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="完成事件" />
+
+        <Button
+            android:id="@+id/horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="显示方式转换" />
+
+        <Button
+            android:id="@+id/line_gravity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="靠左显示" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <razerdp.widget.UnderLineLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/underline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:line_margin_side="25dp"
+            app:line_dynamic_dimen="8dp"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+        </razerdp.widget.UnderLineLinearLayout>
+    </ScrollView>
+</LinearLayout>
